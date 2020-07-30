@@ -15,7 +15,7 @@ COPY srcs /root/
 RUN bash /root/setup.sh
 
 # Expose network ports that are going to be used.
-# Abre as portas a serem usadas.
+# Abre as portas a serem usadas. Sendo a porta 80 protocolo HTTP (sem chave de sergurança), e a 443 HTTPS (com chave de segurança).
 EXPOSE 80/tcp
 EXPOSE 80/udp
 

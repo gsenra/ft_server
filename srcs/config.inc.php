@@ -1,3 +1,5 @@
+/* Arquivo de configurações PHP (https://docs.phpmyadmin.net/pt_BR/latest/settings.html) */
+
 <?php
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 /**
@@ -28,7 +30,9 @@ $i = 0;
 $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
+
 /* Server parameters */
+/* ALguns parametros configurados determinando que o "host" chama "localhost", que não será comprimido, e que não há necessidade de senha neste caso. */
 $cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = true;

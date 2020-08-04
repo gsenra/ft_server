@@ -1,6 +1,6 @@
+<?php
 // ** Arquivo padrão de configurações do Wordpress, com algumas modificações (https://wordpress.org/support/article/editing-wp-config-php) ** //
 
-<?php
 /**
  * The base configuration for WordPress
  *

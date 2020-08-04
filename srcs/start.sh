@@ -12,4 +12,5 @@
 /etc/init.d/nginx start
 
 # Leaves container interactive so you can snoop around.
+# Permite interações com o container.
 bash

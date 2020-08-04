@@ -1,3 +1,5 @@
+# Arquivo dedicado a inicialização dos serviços.
+
 #!/bin/bash
 
 # Start php.

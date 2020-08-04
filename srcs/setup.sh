@@ -1,3 +1,5 @@
+# Arquivo dedicado a configuração geral do server.
+
 #!/bin/bash
 
 # Install programs we will use for server setup: NGINX, php, MySQL, OpenSSL and Wget.
@@ -35,34 +37,29 @@ mysqladmin -u root -p password ""
 service mysql stop
 
 # Download phpMyAdmin files from official website
-# 
+# Download arquivos phpAdmin, arquivos padrão encontrados no site.
 wget https://files.phpmyadmin.net/phpMyAdmin/5.0.2/phpMyAdmin-5.0.2-english.tar.gz
 
+# Descompactar e mover/copiar arquivos para as respectivas pastas.
 # Unpack files, remove compacted file.
 tar -xf phpMyAdmin-5.0.2-english.tar.gz 
 rm -f phpMyAdmin-5.0.2-english.tar.gz
-
 # Move phpMyAdmin to localhost folder.
 mv phpMyAdmin-5.0.2-english /var/www/localhost/phpmyadmin
-
 # Move php configuration file to localhost folder.
 mv ./config.inc.php /var/www/localhost/phpmyadmin
-
 # Download Wordpress files from official website.
 wget https://wordpress.org/latest.tar.gz
-
 # Unpack files, remove compacted file.
 tar -xf latest.tar.gz
 rm -f latest.tar.gz
-
 # Move Wordpress files to localhost folder.
 mv wordpress /var/www/localhost/wordpress
-
 # Copy Wordpress config file to localhost folder.
 cp ./wp-config.php /var/www/localhost/wordpress
-
 # Move PHP info file to localhost folder.
 mv info.php /var/www/localhost
 
 # Override NGINX config file with my own.
+#substitui o arquivo padrão de configuração NGINX pelo arquivo que fiz.
 mv nginx.conf /etc/nginx/sites-available/default

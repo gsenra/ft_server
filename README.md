@@ -5,13 +5,13 @@ Este é um projeto de estudo da 42 São Paulo. O objetivo é configurar um servi
 
 # How to run it | Como rodar:
 
-To create an image from the Dockerfile, while inside the main ft_server folder, enter **docker build -t image_name .** | Para criar uma imagem do Dockerfile, dentro da pasta ft_server, de o comando **docker build -t image_name .**
+To create an image from the Dockerfile, while inside the main ft_server folder, enter **sudo docker build -t image_name .** | Para criar uma imagem do Dockerfile, dentro da pasta ft_server, de o comando **sudo docker build -t image_name .**
 
 
-To start your container, enter **docker run --name container_name -it -p 80:80 -p 443:443 image_name** | Para startar o container, de o comando **docker run --name container_name -it -p 80:80 -p 443:443 image_name**
+To start your container, enter **sudo docker run --name container_name -it -p 80:80 -p 443:443 image_name** | Para startar o container, de o comando **sudo docker run --name container_name -it -p 80:80 -p 443:443 image_name**
 
 
-To turn AutoIndex on or off, while inside the container, enter **bash root/autoindex.sh** | Para ligar ou desligar o AutoIndex, de o comando **bash root/autoindex.sh** dentro do container.
+To turn AutoIndex on or off, while inside the container, enter **sudo bash root/autoindex.sh** | Para ligar ou desligar o AutoIndex, de o comando **sudo bash root/autoindex.sh** dentro do container.
 
 
 To access the website, go to localhost (or 127.0.0.1) on your browser. | Para acessar o site, abra o localhost ou 127.0.0.1 no seu navegador.
@@ -19,25 +19,26 @@ To access the website, go to localhost (or 127.0.0.1) on your browser. | Para ac
 
 # Other useful commands | Comandos uteis:
 
-**docker container ps -a**
+**sudo docker container ps -a**
 Lists all containers.
 Listar containers.
 
-**docker image**
+**sudo docker image**
 Lists all images.
 Listar imagens.
+**sudo docker exec -it container_name bash local_iscript** - executar fora de fora do container
 
-**docker rm container_name** - Removes container | Remover container.
+**sudo docker rm container_name** - Removes container | Remover container.
 
-**docker rm $(docker ps -aq)** - Removes all existing containers | Remover todos os containers existentes.
+**sudo docker rm $(docker ps -aq)** - Removes all existing containers | Remover todos os containers existentes.
 
-**docker rmi image_name** - Removes image | Rmover imagem.
+**sudo docker rmi image_name** - Removes image | Rmover imagem.
 
-**docker rmi $(docker images -q)** - Removes all existing images | Remover todas as imagens existentes.
+**sudo docker rmi $(docker images -q)** - Removes all existing images | Remover todas as imagens existentes.
 
-**docker start/stop container_name** - Turns container on or off | Ligar ou desligar o container.
+**sudo docker start/stop container_name** - Turns container on or off | Ligar ou desligar o container.
 
-**docker attach container_name** - Enters container | Entrar no container.
+**sudo docker attach container_name** - Enters container | Entrar no container.
 
 While inside the container:
 Dentro do Container:

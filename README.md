@@ -5,17 +5,16 @@ Este é um projeto de estudo da 42 São Paulo. O objetivo é configurar um servi
 
 # How to run it | Como rodar:
 
-To create an image from the Dockerfile, while inside the main ft_server folder, enter **docker build -t image_name .**
-Para criar uma imagem do Dockerfile, dentro da pasta ft_server, de o comando **docker build -t image_name .**
+To create an image from the Dockerfile, while inside the main ft_server folder, enter **docker build -t image_name .** | Para criar uma imagem do Dockerfile, dentro da pasta ft_server, de o comando **docker build -t image_name .**
 
-To start your container, enter **docker run --name container_name -it -p 80:80 -p 443:443 image_name**
-Para startar o container, de o comando **docker run --name container_name -it -p 80:80 -p 443:443 image_name**
 
-To turn AutoIndex on or off, while inside the container, enter **bash root/autoindex.sh**
-Para ligar ou desligar o AutoIndex, de o comando **bash root/autoindex.sh** dentro do container.
+To start your container, enter **docker run --name container_name -it -p 80:80 -p 443:443 image_name** | Para startar o container, de o comando **docker run --name container_name -it -p 80:80 -p 443:443 image_name**
 
-To access the website, go to localhost (or 127.0.0.1) on your browser.
-Para acessar o site, abra o localhost ou 127.0.0.1 no seu navegador.
+
+To turn AutoIndex on or off, while inside the container, enter **bash root/autoindex.sh** | Para ligar ou desligar o AutoIndex, de o comando **bash root/autoindex.sh** dentro do container.
+
+
+To access the website, go to localhost (or 127.0.0.1) on your browser. | Para acessar o site, abra o localhost ou 127.0.0.1 no seu navegador.
 
 
 # Other useful commands | Comandos uteis:

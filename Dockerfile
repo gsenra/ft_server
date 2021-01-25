@@ -9,6 +9,7 @@ RUN apt-get update && apt-get upgrade
 # Copy source files to the root of the container.
 # Copia os arquivos de configurações criados (srcs) para a pasta raiz.
 COPY srcs /root/
+RUN chmod +x /root/autoindex.sh
 
 # Server setup.
 # Roda as configurações através de um script (para garantir a ordem dos fatores).
@@ -25,7 +26,3 @@ EXPOSE 443/udp
 # Start services.
 # Inicializa.
 ENTRYPOINT bash /root/start.sh
-
-# Keeps container running
-# Mantem o conteiner rodando por tempo indeterminado.
-CMD tail -f /dev/null

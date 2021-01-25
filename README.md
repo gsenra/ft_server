@@ -3,8 +3,7 @@ This is a student project for 42 São Paulo. The objective is to set up a NGINX 
 
 Este é um projeto de estudo da 42 São Paulo. O objetivo é configurar um servidor web NGINX em um Docker container, rodando um site Wordpress e database SQL. Todos os serviços devem funcionar sem atritos.
 
-# How to run it:
-# Como rodar:
+# How to run it | Como rodar:
 
 To create an image from the Dockerfile, while inside the main ft_server folder, enter **docker build -t image_name .**
 Para criar uma imagem do Dockerfile, dentro da pasta ft_server, de o comando **docker build -t image_name .**
@@ -19,8 +18,7 @@ To access the website, go to localhost (or 127.0.0.1) on your browser.
 Para acessar o site, abra o localhost ou 127.0.0.1 no seu navegador.
 
 
-# Other useful commands:
-# Comandos uteis:
+# Other useful commands | Comandos uteis:
 
 **docker container ps -a**
 Lists all containers.
